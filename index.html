@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+      <input type="checkbox" id="name1" value="name1" v-model="checkedNames">
+      <label for="name1">name1</label>
+      <input type="checkbox" id="name2" value="name2" v-model="checkedNames">
+      <label for="name2">name2</label><br>
+      <p>checkedNames: {{ checkedNames }} {{ checkedNames.length }}</p>
+
+      <div v-for="items in checkedNames">
+        <p>{{ checkedNames }}</p>
+      </div>
+      </div>
+      
+    
+    
+    <script src="src/js/vendor/vue.min.js"></script>
+    <script src="src/vue-trigger.js"></script>
+  </body>
+</html>
